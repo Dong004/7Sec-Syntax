@@ -1,0 +1,29 @@
+[
+  {
+    "concept": "查找缺失值",
+    "tags": [
+      "缺失值检测",
+      "Missing Values"
+    ],
+    "python": {
+      "code": "df.isnull()",
+      "arguments": {
+        "df": "目标DataFrame",
+        "isnull()": "返回一个布尔值DataFrame，指示每个元素是否为缺失值"
+      }
+    },
+    "r": {
+      "code": "is.na(df)",
+      "arguments": {
+        "df": "目标数据对象（向量、矩阵或数据框）",
+        "is.na()": "返回一个逻辑值对象，指示每个元素是否为缺失值NA"
+      }
+    },
+    "sql": {
+      "code": "SELECT * FROM table_name WHERE column_name IS NULL;",
+      "arguments": {
+        "IS NULL": "条件运算符，用于筛选指定列值为NULL（缺失）的记录"
+      }
+    }
+  }
+]
